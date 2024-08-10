@@ -360,12 +360,13 @@ textarea {
       rgba(255, 255, 255, 0.581),
       rgba(214, 237, 3, 0.548)
     );
-    left: 350px;
+    left: 250px;
     transform: translateY(31%);
     top: -5px;
+    flex-shrink: 100px;
   }
   header nav .header .menu li {
-    margin: 39px 38px 0 0;
+    margin: 39px 10px 0 0;
   }
   header nav .header .menu li a {
     margin: 50px;
