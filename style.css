@@ -198,7 +198,8 @@ form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 50px;
+  width: 100%;
+  background-color: red;
 }
 .warpform {
   display: flex;
@@ -288,7 +289,7 @@ textarea {
   text-align: center;
   padding: 30px;
 }
-@media (min-width:600px) and (max-width: 850px) {
+@media (min-width: 600px) and (max-width: 850px) {
   .warp-slide {
     position: relative;
     max-width: 100%;
@@ -369,7 +370,7 @@ textarea {
   header nav .header .menu li a {
     margin: 50px;
   }
-  .social{
+  .social {
     position: absolute;
     left: -99999999px;
   }
@@ -460,6 +461,10 @@ textarea {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
+  form {
+    width: 100%;
+    overflow: hidden;
+  }
   .warpinput {
     margin-top: 30px;
     width: 100%;
@@ -467,5 +472,8 @@ textarea {
   .warpinput input {
     font-size: 30px;
     width: 100%;
+  }
+  #footer nav ul li a {
+    font-size: 15px;
   }
 }
