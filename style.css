@@ -251,7 +251,7 @@ textarea {
 .warpRobot {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .warpRobot div {
   margin-top: 20px;
@@ -269,7 +269,7 @@ textarea {
   display: flex;
   gap: 10px;
   list-style: none;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 #footer nav ul li a {
   text-decoration: none;
@@ -321,6 +321,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
   }
   .warpinput {
     width: 30%;
@@ -343,10 +344,13 @@ textarea {
 }
 @media only screen and (max-width: 600px) {
   #logo {
-    padding: 25px;
+    display: block;
+    padding: 25px 0 25px 0;
+    margin-right: 150px;
   }
   header nav {
     position: relative;
+    gap: 100px;
   }
   header nav .header {
     column-gap: 100px;
@@ -360,14 +364,14 @@ textarea {
       rgba(214, 237, 3, 0.548)
     );
     right: 0;
-    transform: translateY(31%);
+    transform: translateY(30%);
     top: -5px;
   }
   header nav .header .menu li {
-    margin: 39px 10px 0 0;
+    margin: 40px 10px 0 0;
   }
   header nav .header .menu li a {
-    margin: 50px;
+    margin: 30px;
   }
   .social {
     position: absolute;
@@ -379,6 +383,8 @@ textarea {
     font-size: 30px;
     padding-top: -50px;
     background-color: transparent;
+    position: absolute;
+    right: 0;
   }
   .header:hover .menu {
     display: block;
@@ -462,7 +468,7 @@ textarea {
   }
   form {
     width: 100%;
-    overflow: hidden;
+    padding: 0 0 0 10%;
   }
   .warpinput {
     margin-top: 30px;
@@ -471,6 +477,19 @@ textarea {
   .warpinput input {
     font-size: 30px;
     width: 100%;
+  }
+  .warpRobot {
+    position: relative;
+  }
+
+  .warpRobot button {
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+  .warpRobot div {
+    position: relative;
+    top: -10px;
   }
   #footer nav ul li a {
     font-size: 15px;
