@@ -467,16 +467,20 @@ textarea {
     grid-template-rows: repeat(3, 1fr);
   }
   form {
-    width: 100%;
-    padding: 0 0 0 10%;
+    min-width: 100%;
+    overflow: hidden;
+    
   }
   .warpinput {
     margin-top: 30px;
-    width: 100%;
+    min-width: 100%;
   }
   .warpinput input {
     font-size: 30px;
-    width: 100%;
+    min-width: 100%;
+  }
+  .groupselect select{
+    min-width: 100%;
   }
   .warpRobot {
     position: relative;
